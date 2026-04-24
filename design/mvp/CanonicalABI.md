@@ -3360,7 +3360,7 @@ present, is validated as such:
 * `realloc` - the function has type `(func (param addr addr addr addr) (result addr))`
   where `addr` is the address type coming from the [`memtype`] of the `memory`
   canonopt (restricted to `i32`, but with 🐘 may also be `i64`).
-* if `realloc` is present then `memory` must be present
+* 🐘 if `realloc` is present then `memory` must be present
 * `post-return` - only allowed on [`canon lift`](#canon-lift), which has rules
   for validation
 * 🔀 `async` - cannot be present with `post-return`
